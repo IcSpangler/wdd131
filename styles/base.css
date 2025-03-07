@@ -1,9 +1,9 @@
 :root {
     --primary-color: #D81159;
-    --secondary-color:#0496FF;
+    --secondary-color: #0496FF;
     --accent2-color: #FFBC42;
     --accent3-color: #006BA6;
-    --accent4-color:#8F2D56;
+    --accent4-color: #8F2D56;
     --text-color: black;
 }
 
@@ -22,7 +22,7 @@ header span {
 /* Navigation */
 nav {
     background-color: var(--accent4-color);
-    padding: 10px 0;
+    padding: 15px 0;
 }
 
 nav ul {
@@ -46,6 +46,7 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
+
 /* General Styles */
 body {
     font-family: "Merriweather", serif;
@@ -54,6 +55,7 @@ body {
     padding: 0;
     text-align: center;
 }
+
 /* Main Content */
 main {
     max-width: 900px;
@@ -64,15 +66,20 @@ main {
 }
 
 .card {
-    background: white;
+    background: var(--secondary-color);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: left;
+    color: white;
+}
+.card img {
+    display: block;
+    margin: 0 auto;
 }
 
 .card h2 {
-    background-color: #2b4d74;
+    background-color: var(--accent3-color);
     color: white;
     padding: 10px;
     border-radius: 5px;
@@ -81,7 +88,7 @@ main {
 
 /* Footer */
 footer {
-    background-color: #2b4d74;
+    background-color: var(--primary-color);
     color: white;
     padding: 10px 0;
     margin-top: 20px;
