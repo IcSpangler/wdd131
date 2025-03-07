@@ -1,28 +1,18 @@
 :root {
-    --primary-color: #006BA6;
+    --primary-color: #D81159;
     --secondary-color:#0496FF;
     --accent2-color: #FFBC42;
-    --accent3-color: #D81159;
+    --accent3-color: #006BA6;
     --accent4-color:#8F2D56;
     --text-color: black;
 }
 
-/* General Styles */
-body {
-    font-family:"Merriweather",serif;
-    background-color: #f8f8f8;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-
 /* Header */
 header {
-    background-color: #2b4d74;
+    background-color: var(--primary-color);
     color: white;
     padding: 20px 0;
-    font-size: 1.5em;
+    font-size: 1rem;
 }
 
 header span {
@@ -31,7 +21,7 @@ header span {
 
 /* Navigation */
 nav {
-    background-color: #333;
+    background-color: var(--accent4-color);
     padding: 10px 0;
 }
 
@@ -56,7 +46,14 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
-
+/* General Styles */
+body {
+    font-family: "Merriweather", serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 /* Main Content */
 main {
     max-width: 900px;
