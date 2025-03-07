@@ -1,0 +1,96 @@
+:root {
+    --primary-color: #006BA6;
+    --secondary-color:#0496FF;
+    --accent2-color: #FFBC42;
+    --accent3-color: #D81159;
+    --accent4-color:#8F2D56;
+    --text-color: black;
+}
+
+/* General Styles */
+body {
+    font-family:"Merriweather",serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+/* Header */
+header {
+    background-color: #2b4d74;
+    color: white;
+    padding: 20px 0;
+    font-size: 1.5em;
+}
+
+header span {
+    color: #f4c542;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+}
+
+.card h2 {
+    background-color: #2b4d74;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #2b4d74;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+#lastModified {
+    color: #f4c542;
+    font-size: 0.9em;
+}
