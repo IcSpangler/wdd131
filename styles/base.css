@@ -78,7 +78,7 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: left;
-    color: white;
+    color: black;
 }
 
 .card img {
@@ -87,8 +87,8 @@ main {
 }
 
 .card h2 {
-    background-color: var(--accent3-color);
-    color: white;
+    background-color: var(--accent2-color);
+    color: black;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
