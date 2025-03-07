@@ -23,6 +23,8 @@ header span {
 nav {
     background-color: var(--accent4-color);
     padding: 15px 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul {
@@ -30,21 +32,24 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    gap: 20px;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #575757;
+    border-radius: 5px;
 }
 
 /* General Styles */
@@ -63,6 +68,7 @@ main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
+    justify-content: center;
 }
 
 .card {
@@ -73,6 +79,7 @@ main {
     text-align: left;
     color: white;
 }
+
 .card img {
     display: block;
     margin: 0 auto;
