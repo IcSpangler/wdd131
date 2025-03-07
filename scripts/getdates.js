@@ -1,5 +1,5 @@
-// Obtém o ano atual e insere no elemento com id 'currentyear'
+//shows current year//
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 
-// Obtém a última modificação do documento e insere no elemento com id 'lastModified'
+//last mod of the code//
 document.getElementById("lastModified").textContent = "Last Modification: " + document.lastModified;
