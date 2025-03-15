@@ -1,16 +1,16 @@
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Playfair Display", serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #E5FCFF;
     text-align: center;
 }
 
 /* Header Styling */
 header {
-    background-color: #003366;
-    color: white;
+    background-color: #C490D1;
+    color: #E5FCFF;
     padding: 1rem;
     text-align: center;
 }
@@ -35,7 +35,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #E5FCFF;
     text-decoration: none;
     padding: 0.5rem 1rem;
     border-radius: 5px;
@@ -72,7 +72,7 @@ main {
 }
 
 figure {
-    background-color: #fff;
+    background-color: #ABDAFC;
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -94,7 +94,7 @@ figcaption {
 footer {
     margin-top: 2rem;
     padding: 1rem;
-    background-color: #003366;
+    background-color: #C490D1;
     color: white;
     text-align: center;
 }
