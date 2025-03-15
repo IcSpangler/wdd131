@@ -1,14 +1,14 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // Update footer year and last modified date
-    document.getElementById("year").textContent = new Date().getFullYear();
-    document.getElementById("lastModified").textContent = document.lastModified;
-
-    // Hamburger menu toggle
+document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.getElementById("menu-toggle");
-    const navMenu = document.querySelector("nav ul");
+    const navMenu = document.getElementById("nav-menu");
 
-    menuToggle.addEventListener("click", () => {
+    menuToggle.addEventListener("click", function () {
         navMenu.classList.toggle("show-menu");
-        menuToggle.textContent = navMenu.classList.contains("show-menu") ? "✖" : "☰";
     });
+
+    // Set current year dynamically
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+
+    // Set last modified date
+    document.getElementById("lastModified").textContent = "Last Updated: " + document.lastModified;
 });
