@@ -14,4 +14,8 @@
         grid-template-columns: repeat(3, 1fr);
         /* 3-column layout */
     }
+    /* Show navigation links when menu is toggled */
+    .show-menu nav ul li {
+    display: block;
+    }
 }
