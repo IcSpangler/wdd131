@@ -121,9 +121,14 @@ footer {
         display: none;
         flex-direction: column;
         text-align: center;
+        background: #fff;
+        padding: 10px;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
-
-    nav ul.active {
+    .show-menu {
         display: flex;
     }
 }

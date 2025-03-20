@@ -19,3 +19,7 @@
     display: block;
     }
 }
+
+.show-menu {
+    display: flex;
+}

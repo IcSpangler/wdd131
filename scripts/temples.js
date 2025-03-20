@@ -2,21 +2,25 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.getElementById("menu-toggle");
     const navMenu = document.getElementById("nav-menu");
 
-    if (menuToggle && navMenu) {
-        menuToggle.addEventListener("click", function () {
-            navMenu.classList.toggle("show-menu");
-        });
+    if (!menuToggle || !navMenu) {
+        console.error("Erro: Elementos do menu não encontrados.");
+        return;
     }
 
-    // Set current year dynamically
+    menuToggle.addEventListener("click", function () {
+        console.log("Botão do menu clicado!"); // Depuração
+        navMenu.classList.toggle("show-menu");
+    });
+
+    // Atualizar ano automaticamente
     const currentYearElement = document.getElementById("currentyear");
     if (currentYearElement) {
         currentYearElement.textContent = new Date().getFullYear();
     }
 
-    // Set last modified date
+    // Atualizar última modificação
     const lastModifiedElement = document.getElementById("lastModified");
     if (lastModifiedElement) {
-        lastModifiedElement.textContent = "Last Updated: " + document.lastModified;
+        lastModifiedElement.textContent = "Última atualização: " + document.lastModified;
     }
 });
