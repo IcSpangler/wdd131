@@ -2,13 +2,21 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.getElementById("menu-toggle");
     const navMenu = document.getElementById("nav-menu");
 
-    menuToggle.addEventListener("click", function () {
-        navMenu.classList.toggle("show-menu");
-    });
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener("click", function () {
+            navMenu.classList.toggle("show-menu");
+        });
+    }
 
     // Set current year dynamically
-    document.getElementById("currentyear").textContent = new Date().getFullYear();
+    const currentYearElement = document.getElementById("currentyear");
+    if (currentYearElement) {
+        currentYearElement.textContent = new Date().getFullYear();
+    }
 
     // Set last modified date
-    document.getElementById("lastModified").textContent = "Last Updated: " + document.lastModified;
+    const lastModifiedElement = document.getElementById("lastModified");
+    if (lastModifiedElement) {
+        lastModifiedElement.textContent = "Last Updated: " + document.lastModified;
+    }
 });

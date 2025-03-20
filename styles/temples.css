@@ -27,7 +27,8 @@ nav {
 nav ul {
     list-style: none;
     padding: 0;
-    display: none;
+    display: flex;
+    justify-content: space-around;
     /* Hidden initially */
     flex-direction: column;
     text-align: center;
@@ -35,6 +36,7 @@ nav ul {
 
 nav ul li {
     display: block;
+    margin: 0 10px;
 }
 
 nav ul li a {
@@ -109,3 +111,19 @@ footer {
     text-align: center;
 }
 
+/* Responsive menu styles */
+@media (max-width: 768px) {
+    #menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+}
