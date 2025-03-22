@@ -1,0 +1,62 @@
+
+body {
+    font-family: "Playfair Display", serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.hero img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.data-container,
+.weather-container {
+    background: greenyellow;
+    padding: 2px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 10px;
+    background: green;
+    color: white;
+
+}
+@media (max-width: 768px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 40px 10px;
+    }
+
+    .data-box,
+    .weather-box {
+        position: static;
+        width: 90%;
+        margin-bottom: 10px;
+    }
+}
