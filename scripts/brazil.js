@@ -15,10 +15,14 @@ function displayWindChill() {
     const windSpeed = 10; // Static wind speed in mph (adjust as needed)
     const windChillElement = document.getElementById("windChill");
 
-    if (temperature <= 50 && windSpeed > 3) {
-        windChillElement.textContent = calculateWindChill(temperature, windSpeed).toFixed(1) + " °F";
+    if (windChillElement) {
+        if (temperature <= 50 && windSpeed > 3) {
+            windChillElement.textContent = calculateWindChill(temperature, windSpeed).toFixed(1) + " °F";
+        } else {
+            windChillElement.textContent = "N/A";
+        }
     } else {
-        windChillElement.textContent = "N/A";
+        console.error("Element with ID 'windChill' not found.");
     }
 }
 
