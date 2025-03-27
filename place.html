@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,44 +9,48 @@
     <title>Brazil</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
 </head>
+
 <body>
     <header>
         <h1> BRAZIL</h1>
     </header>
 
     <main>
-    <div class="hero">
-        <img src="images/mybrazl.webp" >
-        <div class="data-box">
-            <h2>Data</h2>
-            <p>Area: 3.286.000 mi²</p>
-            <p>Population: 211,1 milhões (2023) </p>
-            <p>Capital: Brasília- DF</p>
-            <p>Languages: Português</p>
-            <p>Currency: Real</p>
-            <p> Time Zone: UTC−03:00 </p>
-            <p> Calling Code: +55</p>
-            <p> Internet TLD: .br</p>
+        <div class="hero">
+            <img src="images/mybrazl.webp" alt="my home country">
+            <div class="data-box">
+                <h2>Data</h2>
+                <p>Area: 3.286.000 mi²</p>
+                <p>Population: 211,1 milhões (2023) </p>
+                <p>Capital: Brasília- DF</p>
+                <p>Languages: Português</p>
+                <p>Currency: Real</p>
+                <p> Time Zone: UTC−03:00 </p>
+                <p> Calling Code: +55</p>
+                <p> Internet TLD: .br</p>
+            </div>
+            <div class="weather-box">
+                <h2>Weather</h2>
+                <img class="svg" src="images/sun.svg" alt="icon">
+                <p>Temperature: </p>
+                <p>Conditions: </p>
+                <p>Wind: </p>
+                <p>Wind Chill: <span id="windChill">N/A</span></p>
+            </div>
         </div>
-        <div class="weather-box">
-            <h2>Weather</h2>
-            <img class="svg" src="images/sun.svg" alt="icon">
-            <p>Temperature:  </p>
-            <p>Conditions: </p>
-            <p>Wind: </p>
-            <p>Wind Chill: <span id="windChill">N/A</span></p>
-        </div>
-    </div>
     </main>
-   
+
     <footer>
         <p>&copy; <span id="currentyear"></span> |Isabelle C Spangler|Utah</p>
-        <p id="lastModified"></p> <script src="scripts/getdates.js" defer></script>
+        <p id="lastModified"></p>
+        <script src="scripts/getdates.js" defer></script>
     </footer>
-    
+
 </body>
+
 </html>
