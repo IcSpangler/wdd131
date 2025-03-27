@@ -1,3 +1,20 @@
+:root {
+    --primary-color: rgb(11, 70, 11);
+    /* Example color for the footer */
+    --secondary-color: #fff;
+    /* White for text color */
+    --hero-height: 60vh;
+    --box-padding: 20px;
+    --box-border-radius: 8px;
+    --box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    padding: var(--box-padding);
+    text-align: center;
+    background: white;
+}
 
 body {
     font-family: "Playfair Display", serif;
@@ -9,54 +26,33 @@ body {
 .hero {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: var(--hero-height);
+    background: url("../images/mybrazl.webp") no-repeat center center/cover;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 100%;
-    object-fit: cover;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url("../images/mybrasil.webp") no-repeat center center/cover;
+    padding: var(--box-padding);
 }
 
 .data-box,
 .weather-box {
     position: absolute;
     background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 8px;
+    padding: var(--box-padding);
+    border-radius: var(--box-border-radius);
     width: 250px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow);
     z-index: 2;
 }
 
-.data-box {
-    top: 15%;
-    left: 5%;
-}
-
-.weather-box {
-    bottom: 15%;
-    right: 5%;
-}
-.svg {
-    width: 50px !important;
-    height: 50px !important;
-
-}
-header,
-footer {
+.footer {
+    width: 100%;
     text-align: center;
-    padding: 10px;
-    background: rgb(11, 70, 11);
-    color: white;
+    padding: 15px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    position: relative;
+    bottom: 0;
 }
 
 @media (max-width: 768px) {
