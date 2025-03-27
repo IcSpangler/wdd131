@@ -46,6 +46,7 @@ body {
 .data-box {
     top: 15%;
     left: 5%;
+    background: var(--secondary-color);
 }
 
 .weather-box {
@@ -57,6 +58,7 @@ body {
 .svg {
     width: 50px !important;
     height: 50px !important;
+    background: var(--secondary-color);
    
 }
 
