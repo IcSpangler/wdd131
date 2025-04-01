@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const temples = [
+        
         {
             templeName: "Aba Nigeria",
             location: "Aba, Nigeria",
@@ -79,32 +80,32 @@ document.addEventListener("DOMContentLoaded", function () {
             area: 116642,
             imageUrl:
                 "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
-        },
-        {
-            templeName: "Boise Idaho ",
-            location: "Boise Idaho ",
-            dedicated: "1987, February, 14",
-            area: 35868,
-            imageUrl:
-                "https://churchofjesuschristtemples.org/assets/img/temples/boise-idaho-temple/boise-idaho-temple-41667-main.jpg"
-        }
+            },
             {
-            templeName: "Mexico City Mexico",
-            location: "Mexico City, Mexico",
-            dedicated: "1983, December, 2",
-            area: 116642,
-            imageUrl:
-                "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
-        },
-        {
-            templeName: "Mexico City Mexico",
-            location: "Mexico City, Mexico",
-            dedicated: "1983, December, 2",
-            area: 116642,
-            imageUrl:
-                "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
-        },
-
+                templeName: "Boise Idaho ",
+                location: "Boise Idaho ",
+                dedicated: "1987, February, 14",
+                area: 35868,
+                imageUrl:
+                    "https://churchofjesuschristtemples.org/assets/img/temples/boise-idaho-temple/boise-idaho-temple-41667-main.jpg"
+            },
+            {
+                templeName: "João Pessoa",
+                location: "João Pessoa, Brasil",
+                dedicated: "not yet",
+                area: 18850,
+                imageUrl:
+                    "https://churchofjesuschristtemples.org/assets/img/temples/joao-pessoa-brazil-temple/joao-pessoa-brazil-temple-50370-main.jpg"
+            },
+            {
+                templeName: "Kansas City Missiouri",
+                location: "Kansas City, Missouri ",
+                dedicated: "2012, May, 6",
+                area: 32000,
+                imageUrl:
+                    "https://churchofjesuschristtemples.org/assets/img/temples/kansas-city-missouri-temple/kansas-city-missouri-temple-36983-main.jpg"
+            },
+        
     ];
 
     function displayTemples(filteredTemples) {
