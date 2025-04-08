@@ -5,7 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Review</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
@@ -14,14 +18,11 @@
     </header>
 
     <form action="review.html" method="get">
-        <!-- Product Name -->
+    
         <label for="productName">Product Name:</label>
         <select id="productName" name="productName" required>
             <option value="" disabled selected>Select a Product ...</option>
-            <!-- JS will populate the rest -->
         </select>
-
-        <!-- Overall Rating -->
         <fieldset>
             <legend>Overall Rating</legend>
             <label><input type="radio" name="rating" id="star1" value="1" required />☆</label>
@@ -30,36 +31,26 @@
             <label><input type="radio" name="rating" id="star4" value="4" />☆☆☆☆</label>
             <label><input type="radio" name="rating" id="star5" value="5" />☆☆☆☆☆</label>
         </fieldset>
-
-        <!-- Date of Installation -->
-        <label for="installDate">Date of Installation:</label>
+        <label for="installDate">Purchase Date:</label>
         <input type="date" id="installDate" name="installDate" required />
-
-        <!-- Useful Features -->
         <fieldset>
             <legend>Useful Features (check all that apply):</legend>
             <label><input type="checkbox" id="feature1" name="features" value="durability" /> Durability</label>
             <label><input type="checkbox" id="feature2" name="features" value="design" /> Design</label>
             <label><input type="checkbox" id="feature3" name="features" value="performance" /> Performance</label>
         </fieldset>
-
-        <!-- Written Review -->
         <label for="writtenReview">Write a Review:</label>
         <textarea id="writtenReview" name="writtenReview" rows="5" cols="30"></textarea>
-
-        <!-- User Name -->
         <label for="userName">Your Name:</label>
         <input type="text" id="userName" name="userName" />
-
-        <!-- Submit -->
         <input type="submit" value="Submit Review" />
     </form>
 
     <footer>
-        <p>&copy; <span id="year"></span> Rafting and Travel | Last Modified: <span id="lastModified"></span></p>
+        <p>&copy; <span id="year"></span> Isabelle C Spangler | Last Modified: <span id="lastModified"></span></p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="scripts/form.js" defer></script>
 </body>
 
 </html>

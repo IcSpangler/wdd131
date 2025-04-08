@@ -1,9 +1,9 @@
 :root {
-    --bg-color: #E6E1C5;
-    --form-bg: #D4CB92;
-    --text-dark: #395C6B;
-    --button-bg: #80A4ED;
-    --input-bg: #BCD3F2;
+    --bg-color: #361134;
+    --form-bg: #B0228C;
+    --text-dark: #fff;
+    --button-bg: #E56B70;
+    --input-bg: #F391A0;
 }
 
 body {
@@ -34,7 +34,7 @@ legend {
     display: block;
     margin-top: 20px;
     font-weight: bold;
-    color: var(--text-dark);
+    color: white
 }
 
 input[type="text"],
@@ -73,7 +73,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #5f86db;
+    background-color: #d5575b;
 }
 
 footer {
