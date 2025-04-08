@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Last Modified date
     document.getElementById("lastModified").textContent = document.lastModified;
 
-    // Review count with localStorage
+   
     let count = localStorage.getItem("reviewCount") || 0;
     count++;
     localStorage.setItem("reviewCount", count);
