@@ -146,9 +146,7 @@ document.addEventListener('DOMContentLoaded', function () {
     submitButton.setAttribute('type', 'submit');
     submitButton.textContent = 'Submit';
     form.appendChild(submitButton);
-
-    // Append the form to the container
-    formContainer.appendChild(form);
+    
     // Append the form to the container
     formContainer.appendChild(form);
 
