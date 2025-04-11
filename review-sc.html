@@ -9,7 +9,7 @@
     <title>Street & Chic</title>
     <link rel="stylesheet" href="styles/mysite.css">
     <link rel="icon" type="image/png" href="images/street&chic-logo.jpg">
-    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/website.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
@@ -26,20 +26,13 @@
                 <li><a href="trend.html">Trend Reports</a></li>
                 <li><a href="stores.html">Thrift Fashion Stores</a></li>
                 <li><a href="style-gallery.html">Style Gallery</a></li>
-                <li><a href="review-sc.html"> Review </a></li>
+                <li><a href="review-sc.html"> Style Evaluation</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2>Share Your Outfit</h2>
-        <form id="reviewForm">
-            <label for="name">Name:</label>
-            <input id="name" name="name" required>
-            <label for="outfit">Describe your outfit:</label>
-            <textarea id="outfit" name="outfit" required></textarea>
-            <button type="submit">Submit</button>
-            </form>
-             <section id="reviewList"></section>
+        <h2>Share Your Style!</h2>
+        <div id="formContainer"></div> 
     </main>
     <footer>
         <p>&copy; <span id="currentyear"></span> | Isabelle C Spangler | Utah</p>

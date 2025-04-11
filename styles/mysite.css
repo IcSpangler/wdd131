@@ -28,6 +28,8 @@ h2 {
     font-family: 'Merriweather', serif;
     font-weight: 700;
     color: #2F0A28;
+    text-align: center;
+    margin-top: 1rem;
 }
 
 p {
@@ -71,7 +73,7 @@ nav a:hover {
 }
 /* Video Section */
 video {
-    width: 100%;
+    width:  auto;
     margin: 20px 0;
 }
 .video video {
@@ -279,4 +281,58 @@ footer .social-media {
 .outfit-card p {
     margin: 0.5rem 0 0;
     font-size: 0.95rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  padding: 2rem;
+}
+
+fieldset {
+    border: 1px solid #C94277;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--accent3-color)
+}
+
+fieldset label {
+    display: block;
+    margin: 5px 0;
+}
+
+input,
+textarea,
+select {
+    padding: 12px;
+    border: 2px solid #C94277;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #2F0A28;
+    outline: none;
+    margin: 5px 0;
+}
+
+button {
+    padding: 12px;
+    background-color: #C94277;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2F0A28;
 }

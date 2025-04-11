@@ -74,31 +74,92 @@ if (galleryContainer) {
     });
 }
 
-// Review Form
-const form = document.querySelector("#reviewForm");
-const reviewList = document.querySelector("#reviewList");
+document.addEventListener('DOMContentLoaded', function () {
+    const formContainer = document.getElementById('formContainer');
 
-if (form && reviewList) {
-    form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        const name = document.querySelector("#name").value;
-        const outfit = document.querySelector("#outfit").value;
+    const form = document.createElement('form');
+    form.setAttribute('id', 'styleForm');
 
-        const review = { name, outfit };
-        let reviews = JSON.parse(localStorage.getItem("reviews")) || [];
-        reviews.push(review);
-        localStorage.setItem("reviews", JSON.stringify(reviews));
+    // Clothing Types Question
+    const clothingTypeLabel = document.createElement('label');
+    clothingTypeLabel.setAttribute('for', 'clothingType');
+    clothingTypeLabel.textContent = 'What types of clothing do you wear the most? (Select all that apply)';
+    form.appendChild(clothingTypeLabel);
 
-        displayReviews();
-        form.reset();
+    const clothingFieldset = document.createElement('fieldset');
+    const clothingTypes = ['Casual', 'Formal', 'Sporty', 'Boho Style', 'Modern', 'Other'];
+    clothingTypes.forEach(type => {
+        const label = document.createElement('label');
+        label.innerHTML = `<input type="checkbox" name="clothingType" value="${type.toLowerCase()}"> ${type}`;
+        clothingFieldset.appendChild(label);
     });
+    form.appendChild(clothingFieldset);
 
-    function displayReviews() {
-        const reviews = JSON.parse(localStorage.getItem("reviews")) || [];
-        reviewList.innerHTML = reviews.map(r =>
-            `<p><strong>${r.name}:</strong> ${r.outfit}</p>`
-        ).join("");
-    }
+    // Style Evaluation Question
+    const styleRatingLabel = document.createElement('label');
+    styleRatingLabel.setAttribute('for', 'styleRating');
+    styleRatingLabel.textContent = 'How would you rate your personal style?';
+    form.appendChild(styleRatingLabel);
 
-    displayReviews();
-}
+    const styleRatingSelect = document.createElement('select');
+    styleRatingSelect.setAttribute('id', 'styleRating');
+    styleRatingSelect.setAttribute('name', 'styleRating');
+    styleRatingSelect.required = true;
+    const styleOptions = ['Comfortable', 'Elegant', 'Creative', 'Laid-back', 'Avant-garde'];
+    styleOptions.forEach(option => {
+        const optionElement = document.createElement('option');
+        optionElement.value = option.toLowerCase().replace(' ', '');
+        optionElement.textContent = option;
+        styleRatingSelect.appendChild(optionElement);
+    });
+    form.appendChild(styleRatingSelect);
+
+    // Color Preferences
+    const colorPreferenceLabel = document.createElement('label');
+    colorPreferenceLabel.setAttribute('for', 'colorPreference');
+    colorPreferenceLabel.textContent = 'What colors do you wear most often?';
+    form.appendChild(colorPreferenceLabel);
+
+    const colorPreferenceInput = document.createElement('input');
+    colorPreferenceInput.setAttribute('type', 'text');
+    colorPreferenceInput.setAttribute('id', 'colorPreference');
+    colorPreferenceInput.setAttribute('name', 'colorPreference');
+    colorPreferenceInput.setAttribute('placeholder', 'e.g., Black, White, Blue, etc.');
+    colorPreferenceInput.required = true;
+    form.appendChild(colorPreferenceInput);
+
+    // Style Description
+    const styleDescriptionLabel = document.createElement('label');
+    styleDescriptionLabel.setAttribute('for', 'styleDescription');
+    styleDescriptionLabel.textContent = 'Briefly describe how you would define your personal style:';
+    form.appendChild(styleDescriptionLabel);
+
+    const styleDescriptionTextarea = document.createElement('textarea');
+    styleDescriptionTextarea.setAttribute('id', 'styleDescription');
+    styleDescriptionTextarea.setAttribute('name', 'styleDescription');
+    styleDescriptionTextarea.setAttribute('rows', '4');
+    styleDescriptionTextarea.required = true;
+    form.appendChild(styleDescriptionTextarea);
+
+    // Submit Button
+    const submitButton = document.createElement('button');
+    submitButton.setAttribute('type', 'submit');
+    submitButton.textContent = 'Submit';
+    form.appendChild(submitButton);
+
+    // Append the form to the container
+    formContainer.appendChild(form);
+    // Append the form to the container
+    formContainer.appendChild(form);
+
+    // Handle form submission
+    form.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Show a popup message after submission
+        alert("Thank you for your submission! We appreciate your collaboration in helping us improve our style insights.");
+
+        // Optionally, reset the form after submission
+        form.reset();
+    })
+})
